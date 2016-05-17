@@ -1,5 +1,5 @@
 #!/bin/sh
-geth --datadir="/root/.ethereum"  \
+geth --dev --datadir="/root/.ethereum"  \
 --port 30310 --rpc --rpcport 8110 --rpcaddr "0.0.0.0" --pprofport 6110 \
 --networkid 94403 --rpccorsdomain "*" --minerthreads "1" \
 --nodiscover \

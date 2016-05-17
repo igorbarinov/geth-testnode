@@ -14,6 +14,7 @@ COPY rungeth.docker /usr/bin/rungeth
 # Note we are taking advantage of Docker's copy-on-mount feature
 
 COPY password /root/password
+COPY config.js /root/config.js
 COPY mine.js /root/mine.js
 COPY genesis.json  /root/genesis.json
 COPY ethereum /root/.ethereum
