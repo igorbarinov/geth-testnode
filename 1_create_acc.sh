@@ -1,1 +1,1 @@
-geth --datadir="/tmp/ethlocal" --password password account new
+geth --datadir="./ethereum/" --password password account new

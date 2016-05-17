@@ -1,0 +1,10 @@
+#!/bin/sh
+geth --datadir="/root/.ethereum"  \
+--port 30310 --rpc --rpcport 8110 --rpcaddr "0.0.0.0" --pprofport 6110 \
+--networkid 94403 --rpccorsdomain "*" --minerthreads "1" \
+--nodiscover \
+--rpcapi "eth,web3" --maxpeers 4 --password "/root/password" \
+--unlock 23290181614a8591db234fec6bb2d963936a2691 \
+--mine --minerthreads 1 \
+js "/root/mine.js" 2> /tmp/geth.log
+

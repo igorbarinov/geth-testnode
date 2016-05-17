@@ -1,4 +1,4 @@
 #init
-geth --datadir="/tmp/ethlocal" init dev_genesis.json 
+geth --datadir="ethereum" init genesis.json 
 
 
